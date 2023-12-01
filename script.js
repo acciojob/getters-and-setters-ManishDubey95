@@ -1,23 +1,23 @@
 //complete this code
 class Person {
-  #name;
-  #age;
+  _name;
+  _age;
 
   constructor(name, age) {
-    this.#name = name;
-    this.#age = age;
+    this._name = name;
+    this._age = age;
   }
 
   get name() {
-    return this.#name;
+    return this._name;
   }
 
   get age() {
-    return this.#age;
+    return this._age;
   }
 
   set age(age) {
-    this.#age = age;
+    this._age = age;
   }
 }
 
@@ -41,13 +41,6 @@ class Teacher extends Person {
   }
 }
 
-const student = new Student("John", 20);
-student.study(); // Output: John is studying
-console.log(`Student's age: ${student.age}`); // Output: Student's age: 20
-
-const teacher = new Teacher("Professor Smith", 35);
-teacher.teach(); // Output: Professor Smith is teaching
-console.log(`Teacher's age: ${teacher.age}`); // Output: Teacher's age: 35
 
 // Do not change the code below this line
 window.Person = Person;
